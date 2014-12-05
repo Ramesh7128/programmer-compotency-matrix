@@ -12,17 +12,90 @@ def index(request):
     context = RequestContext(request)
     context_dict = {}
     colordict = {
-            "Data Structures": [5,11,3,3],
-            "Algorithms": [4,11,5,2],
-            "Systems Programming": [6,10,1,2],
-            "Source Code Version Control": [0,1,9,11],
-            "Build Automation": [7,6,4,0],
-            "Automated testing": [6,6,1,1],
-            "Problem Decomposition": [2,6,9,1],
-            "Systems Decomposition": [6,5,6,0],
-            "Communication": [5,3,6,9],
-            "Code Organization within a file": [1,10,6,4],
-            "Code organization across files": [1,13,4,4],
+            "datastructures": {
+                "level0":5,
+                "level1":3,
+                "level2":7,
+                "level3":8,
+            },
+            "Algorithms": {
+
+                "level0":0.4,
+                "level1":11,
+                "level2":5,
+                "level3":2,
+            },
+            "Systems Programming": {
+
+                "level0":6,
+                "level1":10,
+                "level2":1,
+                "level3":2,
+            },
+            "Source Code Version Control": {
+
+                "level0":0,
+                "level1":1,
+                "level2":9,
+                "level3":11,
+
+            },
+            "Build Automation": {
+
+                "level0":.7,
+                "level1":.6,
+                "level2":.4,
+                "level3":.0,
+
+            },
+            "Automated testing": {
+
+                "level0":.6,
+                "level1":.6,
+                "level2":.1,
+                "level3":.1,
+
+            },
+            "Problem Decomposition": {
+
+                "level0":.2,
+                "level1":.6,
+                "level2":.9,
+                "level3":.1,
+
+            },
+            "Systems Decomposition": {
+
+                "level0":.6,
+                "level1":.5,
+                "level2":.6,
+                "level3":.0,
+
+            },
+            "Communication": {
+
+                "level0":.5,
+                "level1":.3,
+                "level2":.6,
+                "level3":.9,
+
+            },
+            "Code Organization within a file": {
+
+                "level0":.1,
+                "level1":1,
+                "level2":.6,
+                "level3":.4,
+
+            },
+            "Code organization across files": {
+
+                "level0":1,
+                "level1":2,
+                "level2":9,
+                "level3":11,
+
+            },
             "Source Tree Orgranization": [3,13,2,4],
             "Code Readability": [3,12,6,2],
             "Defensive Coding": [10,3,5,1],
